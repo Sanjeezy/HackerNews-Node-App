@@ -39,7 +39,7 @@ function getProfile(itemID) {
 			const item = JSON.parse(body);
 			//console.dir(item);
 			printMessage(itemID, item.type, item.title, item.score);
-      console.log("\n");
+      		console.log("\n");
 
       if(item.kids.length > 0) {
         item.kids.forEach(displayComments);
@@ -48,4 +48,4 @@ function getProfile(itemID) {
   });
 }
 
-getProfile(8863);
+getProfile(8863); //dropbox post
